@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Class Selectors</title>
+        <style>
+            /*
+                Targeting classes on particular elements
+                
+                You can create a selector that will target specific elements with the
+                 class applied. In this next example we will highlight a
+                  <span> with a class of highlight
+                  differently to an <h1> heading with a class of highlight
+            */
+            span.highlight {
+                background-color: yellow;
+            }
+
+            h1.highlight {
+                background-color: pink;
+            }
+            /*Target an element if it has more than one class applied*/
+            .notebox {
+                border: 4px solid #666;
+                padding: .5em;
+            }
+
+            .notebox.warning {
+                border-color: orange;
+                font-weight: bold;
+            }
+
+            .notebox.danger {
+                border-color: red;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 class="highlight">Class selectors</h1>
+        <p><span class="highlight"> Highlighted span </span></p>
+        
+        <div class="notebox">
+            This is an informational note.
+        </div>
+    
+        <div class="notebox warning">
+            This note shows a warning.
+        </div>
+    
+        <div class="notebox danger">
+            This note shows danger!
+        </div>
+    
+        <div class="danger">
+            This won't get styled — it also needs to have the notebox class
+        </div>
+
+    </body>
+</html>

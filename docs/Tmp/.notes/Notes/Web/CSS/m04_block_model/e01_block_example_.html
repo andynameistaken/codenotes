@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            /*If a box is defined as a block, it will behave in the following ways:
+            
+           * The box will break onto a new line.
+           * The box will extend in the inline direction to fill the space available in its container.
+               In most cases this means that the box will become as wide as its container,
+               filling up 100% of the space available.
+           If a box has an outer display type of inline, then:
+            
+           * The box will not break onto a new line.
+           * The width and height properties will not apply.
+           * Vertical padding, margins, and borders will apply
+                but will not cause other inline boxes to move away from the box.
+           * Horizontal padding, margins, and borders will apply
+                and will cause other inline boxes to move away from the box.*/
+            p, ul {
+                border: 2px solid rebeccapurple;
+                padding: .5em;
+            }
+
+            .block,
+            li {
+                border: 2px solid blue;
+                padding: .5em;
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+            }
+
+            .block {
+                display: block;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <p>I am a paragraph. A short one.</p>
+        <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+        </ul>
+        <p>I am another paragraph. Some of the <span class="block">words</span> have been wrapped in a <span>span element</span>.</p>
+
+    </body>
+</html>

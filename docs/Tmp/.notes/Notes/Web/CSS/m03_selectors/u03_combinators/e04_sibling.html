@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            /*f you want to select siblings of an element even if they are not directly adjacent,
+             then you can use the general sibling combinator (~)*/
+            h1 ~ p {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Header</h1>
+        <p>paragraph 1</p>
+        <article>
+            <p>Paragraph 2 in article</p>
+            <h1>Header in article</h1>
+            <p>Paragraph 3 in article</p>
+        </article>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+div{
+    background:red; color:#fff; font-size:20px; padding:10px;
+    margin-bottom:40px;
+}
+.box{
+    display:initial;
+/*    it sets value to CSS default, not browser default*/
+}

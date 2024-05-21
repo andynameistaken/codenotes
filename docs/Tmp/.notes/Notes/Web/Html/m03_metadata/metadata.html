@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    This element specifies characacter encoding-->
+<!--    UTF-8 Charset contains Japanese characters
+        ISO-8859-1,  (the character set for the Latin alphabet) doesn't
+-->
+
+<!--    <meta charset="UTF-8">-->
+    <title>metadata</title>
+    <meta charset="ISO-8859-1">
+<!--    name -  is for specifying type of meta element
+        content - is for content (duh)-->
+    <meta name="author" content="Andrzej Zahorski">
+<!--    This item is visible in search enginges-->
+    <meta name="description" content="This is my training of meta content in HTML.">
+    <!--Specifying a description that includes keywords relating to the content of your page
+     is useful as it has the potential to make your page appear higher in relevant
+     1searches performed in search engines -->
+    
+<!--    Icon of webpage:
+        link rel = relationship
+-->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <h1>Metadata</h1>
+    <h2>Example showing what bad encoding can do</h2>
+    <p>Japanese text ご飯が熱い</p>
+    <h2>Example with span inline with language</h2>
+    <p>Japanese example: <span lang="ja">ご飯が熱い。</span>.</p>
+</body>
+</html>

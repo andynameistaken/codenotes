@@ -1,0 +1,29 @@
+.box{
+    border:solid 10px rgba(12,72,0,0.5); background-color:rgba(0,0,0,0.5);
+    width:200px; height:200px; margin:30px;
+}
+
+div{
+    width:inherit;
+    height:inherit;
+    margin:inherit;
+    background-color:inherit;
+    border:inherit;
+}
+
+span{
+    width:inherit;
+    height:inherit;
+    margin:inherit;
+    background-color:inherit;
+    border:inherit;
+
+    display:inherit;
+    border-color:red;
+}
+
+.change{
+    /*border-color:red;  width:100px;*/
+    border-style: dashed;
+}
+

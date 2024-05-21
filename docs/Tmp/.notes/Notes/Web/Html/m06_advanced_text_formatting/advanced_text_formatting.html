@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Advanced Text Formatting</title>
+</head>
+<body>
+	<h1>
+		Advanced Text Formatting
+	</h1>
+	
+	<h2>Description Lists</h2>
+	<p>
+		Used with items and descriptions attached to them. Something like questions
+		and answers or terms and definitions
+	</p>
+	
+	<dl>
+		<dt>Cat</dt>
+		<dd>Animal that purrs and sleeps much</dd>
+		
+		<dt>
+			Snek
+		</dt>
+		<dd>Don't step on snek, it's dangerous</dd>
+	</dl>
+	
+	<h2>Blockquotes</h2>
+	<p>i.e. using text of someone else</p>
+	<br>
+	<p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+		Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+	
+	<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+		<p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+			Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+	</blockquote>
+	
+	<blockquote cite="me.com">
+		<p>I am quoting myself</p>
+	</blockquote>
+	
+	<h2>
+		Cite
+	</h2>
+	<p>
+		Cite is not that useful
+	</p>
+	<p>According to the <a href="https://google.com">
+		<cite>google</cite></a>
+	</p>
+	
+	<h2>Abbreviations and acronyms</h2>
+	<p>Used for acronyms</p> <br>
+	<p>
+		<abbr title="United States of America">USA</abbr>
+	</p>
+	
+	<h2>
+		Address
+	</h2>
+	<address>
+		<p>
+			Andy <br>
+			Random Street 123<br>
+			Unknown City <br>
+		</p>
+	</address>
+	
+	<h2>Superscript and subscript</h2>
+	<ul>
+		<li>Superscript: 2<sup>2</sup> = 4</li>
+			<li>Subscript: log<sub>2</sub>2 = 1</li>
+	</ul>
+	
+	<h2>Code</h2>
+	<ul>
+		<li><code>&lt;code&gt;</code> - is for marking computer code (not specific one just code)</li>
+		<li><code>&lt;pre&gt;</code>   - for retaining indentation</li>
+		<li><code>&lt;var&gt;</code>   - for marking variables</li>
+		<li><code>&lt;kbd&gt;</code>   - for marking keyboard input</li>
+		<li><code>&lt;samp&gt;</code> - for marking sample output of program</li>
+		
+	</ul>
+	<h3>Exapmle:</h3>
+	<pre>
+		<code>
+			public void infinite()
+			{
+				boolean <var>flag</var> = true;
+				while (<var>flag</var>)
+					System.out.println("Infinite loop");
+			}
+		</code>
+	</pre>
+	<p>
+		Sample output:
+	</p>
+	<pre>
+		<samp>
+			Infinite loop
+			Infinite loop
+			Infinite loop
+		</samp>
+	</pre>
+	<p>To end this program you need to press: <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
+	
+	<h2>Time and date</h2>
+	<!-- Standard simple date -->
+	<time datetime="2016-01-20">20 January 2016</time> <br>
+	<!-- Just year and month -->
+	<time datetime="2016-01">January 2016</time> <br>
+	<!-- Just month and day -->
+	<time datetime="01-20">20 January</time> <br>
+	<!-- Just time, hours and minutes -->
+	<time datetime="19:30">19:30</time> <br>
+	<!-- You can do seconds and milliseconds too! -->
+	<time datetime="19:30:01.856">19:30:01.856</time> <br>
+	<!-- Date and time -->
+	<time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time> <br>
+	<!-- Date and time with timezone offset-->
+	<time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time> <br>
+	<!-- Calling out a specific week number-->
+	<time datetime="2016-W04">The fourth week of 2016</time> <br>
+</body>
+</html>

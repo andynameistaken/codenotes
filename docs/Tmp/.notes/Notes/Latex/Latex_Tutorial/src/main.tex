@@ -1,0 +1,197 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{ulem}
+\usepackage{amsmath}
+
+
+%set paragraph indentation
+\setlength{\parindent}{1cm} 
+\begin{document}
+\pagecolor{darkgray}
+% \pagecolor{lightgray}
+% \color{blue}
+\color{cyan}
+
+% >>> INSERT TEXT HERE <<<x
+\section{Text}
+\subsection{Changing Text Sizes}
+\begin{itemize}
+    \item Normal text \Huge huge text \normalsize normal text
+    \item {\Large Large text in braces} normal outside
+\end{itemize}
+
+\subsection{Font Styles}
+\begin{itemize}
+    \item textbf - \textbf{bold text}
+    \item textit - \textit{italic text}
+    \item  underline - \underline{underlined text}
+    \item bold + italics + underline - \textbf{\textit{\underline{itlalized undelined bold text}}}
+\end{itemize}
+
+
+
+
+\LaTeX{} has problem with long underlines - it messes up spacing:
+This longer underlined text \underline{will cause sonme troubles along the way with spacing and breaking lines}
+so it is better to use package ulem wit option uline ssome textsome textsome textsome textsome textsome textsome textome text
+
+\medskip
+
+\LaTeX{} has problem with long underlines - it messes up spacing:
+This longer underlined text \uline{will cause sonme troubles along the way with spacing and breaking lines}
+so it is better to use package \texttt{ulem} with option uline ssome textsome 
+textsome textsome textsome textsome textsome textome text
+
+Also \texttt{ulem} has:
+\begin{itemize}
+    \item \uuline{double underline}
+    \item \uwave{wavy underline}
+\end{itemize}
+
+\subsection{Text Emphasis}
+\begin{itemize}
+    \item Regular \normalem{emphasis}
+    \item \textit{Italic \normalem{emphasis}}
+    \item \normalem{Emphasized \normalem{emphasis} text}
+\end{itemize}
+ulem package messes up emphasis, to get it right we need to use \texttt{\char`\\normalem} to get it right
+\subsection{Font Families}
+\begin{itemize}
+    \item \textrm{Default Roman text}
+    \item \textsf{Sans serif text}
+    \item \texttt{Typewriter text}
+\end{itemize}
+\subsection{Test Justification/Algnment}
+\subsubsection{Default Alignment - Fully Justified}
+By default text is fully justified - left and right margins are the same and text stretches to fill width of page
+\medskip
+sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text 
+\subsubsection{Left Justified Text}
+\begin{flushleft}
+    Left justified text is aligned with left margin, words are not streched out, so right margin is ragged
+    
+    \medskip
+sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text 
+\end{flushleft}
+\subsubsection{Center Justified Text}
+\begin{center}
+    Center justified text is aligned to center of the document, spacing between words is not streched out 
+    so left and right margins are ragged 
+    \medskip
+sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text 
+\end{center}    
+
+\subsubsection{Right justified text}
+\begin{flushright}
+sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text 
+\end{flushright}
+\subsection{Line Breaks}
+This is a line of text with \\ 
+4 line  break line \\[4\baselineskip]
+extra space and break line 
+ 
+\subsection{Indentation}
+Every paragraph is indented automatically. To create new paragraph we need to put two Enter keys
+
+This is new, indented paragraph
+
+\noindent This is paragraph without indentation
+
+\section{Basic Math Manipulation}
+\subsection{Math Modes  }
+\subsubsection{Display Style Math}
+Math equations are in center of page
+\begin{itemize}
+    \item Backslash bracket combination (best for single lines of math equations):
+    \[f(x) = (x + 2)^2 - 9\]
+    \item align*(star means equations won't be numbered   ) environment - alignes multiline equations
+    the ampersand character \texttt{\&} determines where the equations align.
+    
+\begin{align*} 
+2x - 5y &=  8 \\ 
+3x + 9y &=  -12
+\end{align*}
+It also can be used to align multiple equations:
+\begin{align*}
+    a + b & = 0         & 3y - 2 & = 5 \\
+    2a + 3 & = b        & 2x + 32 - 2 & = 11 \\
+    b + 4a + 11 & = 7   & 21z * 2 - 3y & = 23
+\end{align*}
+Numbered equations: 
+\begin{align}
+    a + b & = 0         & 3y - 2 & = 5 \\
+    2a + 3 & = b        & 2x + 32 - 2 & = 11 \\
+    b + 4a + 11 & = 7   & 21z * 2 - 3y & = 23
+\end{align}
+Skippiing one number:
+\begin{align}
+    a + b & = 0         & 3y - 2 & = 5 \\
+    2a + 3 & = b        & 2x + 32 - 2 & = 11 \nonumber \\
+    b + 4a + 11 & = 7   & 21z * 2 - 3y & = 23
+\end{align}
+\end{itemize}
+\subsubsection{Inline}
+It is just math that stays in line. There are two ways of doing it (first is dated)
+\begin{itemize}
+    \item This is Pythagorean teorem: $a^2 + b^2 = c^2$ which you should know by now.
+    \item This is Pythagorean teorem: \(a^2 + b^2 = c^2\) which you should know by now.
+\end{itemize}
+
+\subsubsection{More Differences in Math Modes}
+Lets look at formula:
+    \begin{equation*}
+        \sum_{n=0}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}
+    \end{equation*}
+* \uline{This is how it will look like in forced display mode inside text:}
+
+text text text  text text text text text text text text ttexttexttexttexttexttextext text\(\displaystyle \sum_{n=0}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}\) text text text text text text text text texttexttexttexttexttext
+ext texttext text
+
+\uline{* This is how it will look like in forced inline mode}
+
+Text text  text text text text text text \[\textstyle \sum_{n=0}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}\] text  text  text  text  text  text  text  text  text  text  text  text 
+
+\subsection{Basic Notation}\label{subsec:basic-notation}
+
+\subsubsection{Arithmetic}
+\begin{itemize}
+    \item Addition: 1 + 1
+    \item Substraction: 1 - 1
+    \item Multiplication:
+    \begin{itemize}
+        \item cdot: \(a^2 \cdot 2 \)
+        \item times: \(a^2 \times 2\) 
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Fractions}
+Fraction in display style: \[\frac{numerator}{denominator}\]
+\noindent
+Fraction in inline style \(\frac{numerator}{denominator}\)
+Forced fractions:
+\begin{itemize}
+    \item forced text-style (inline) \[\tfrac{numerator}{denominator}\]
+    \item forced display-style \(\dfrac{numerator}{denominator}\)
+\end{itemize}
+ 
+\subsection{Superscript and subscript}
+\begin{itemize}
+\item Superscript: \(a ^ 2\)
+\item Subscript: \(a_2\)
+\item Grouped with brackets: \(e^{kx}\), without brackets: \(e^kx\)
+\item Simultaneous Superscript and Subscript: \(a_1^2\), \(a^2_1\)
+\item Combined Superscripts and Subscripts
+\begin{itemize}
+    \item Stacked Style: \(x_1^{y_1}\) 
+    \item Offset Style: \({x_1}^{y^1}\)
+\end{itemize}
+
+\section{Parentheses}\label{sec:parentheses}
+To autoresize parantheses we use \textbf{\textbackslash left} and \textbf{\textbackslash right}:
+\[\left( \left( \frac{1}{a + b} \right)^2 \right)\]
+    
+\end{itemize}
+some text
+\end{document}
+

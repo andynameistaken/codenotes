@@ -1,0 +1,89 @@
+{
+  "main": {
+    "id": "ed19c17bcb66e702",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8c6a7b6afe608db",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "869654ac4c3263ae",
+    "type": "split",
+    "children": [
+      {
+        "id": "9aa1037d2474d279",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e14dd6ebcaed296",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "60d81ece63f878df",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d7a938684f0ed651",
+    "type": "split",
+    "children": [
+      {
+        "id": "91b2a56d5d9c99ad",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21791ae62998f256",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d8c6a7b6afe608db",
+  "lastOpenFiles": [
+    "core/objects-in-java.md"
+  ]
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            .red-border {
+                border: red solid 1px;
+    
+            }
+            .all-1 {
+                margin-top: 10px;
+                margin-right: 15px;
+                margin-bottom: 20px;
+                margin-left: 30px;
+            }
+        /*    is  the same like:*/
+            
+            .all-2 {
+                margin: 10px 15px 20px 30px;
+            }
+            
+            .three {
+                /*        top | right&left | bottom     */
+                margin:   20px    50px        30px;
+            }
+            
+            .two {
+                /*      top & bottom  |    right & left       */
+                margin:     20px            40px;
+            }
+            
+            .one {
+            /*    t & r & b & l*/
+                margin: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="all-1 red-border"> one </div>
+        
+        <div class="all-2 red-border"> two </div>
+        
+        <div class="three red-border"> top 20 r+l 50 bottom 30</div>
+        
+        <div class="two red-border">top&bottom = 20px r&l = 40 px</div>
+        
+        <div class="one red-border"> one to rule them all </div>
+        
+        
+    </body>
+</html>

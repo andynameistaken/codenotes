@@ -1,0 +1,12 @@
+/*Resets the property to its natural value, which means that if the
+property is naturally inherited it acts like
+inherit, otherwise it acts like initial.*/
+
+a {
+    color: unset; /* will be equal to 'inherit' value */
+    display: unset; /* will be equal to 'initial' value*/
+    font-weight: unset;
+    font-size: unset;
+
+}
+

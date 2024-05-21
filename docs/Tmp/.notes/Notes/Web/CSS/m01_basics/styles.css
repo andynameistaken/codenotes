@@ -1,0 +1,45 @@
+.special {
+    color: orange;
+    font-weight: bold;
+}
+
+li em {
+    color: chartreuse;
+}
+
+h1 + p {
+    font-size: 200%;
+}
+
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+.special {
+    color: purple;
+}
+body {
+    background-color: pink;
+}
+
+@media (min-width: 100em) {
+    body {
+        background-color: blue;
+    }
+}
+

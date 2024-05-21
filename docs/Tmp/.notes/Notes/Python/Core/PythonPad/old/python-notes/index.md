@@ -1,0 +1,3 @@
+# Python
+
+[[blog/m01]]

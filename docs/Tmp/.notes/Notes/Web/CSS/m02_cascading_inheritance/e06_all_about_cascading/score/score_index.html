@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="score_styles.css">
+</head>
+<body>
+	<h1>CSS specificity scores</h1>
+	<table >
+		<tr>
+			<th>Selector</th>
+			<th>Specificity</th>
+		</tr>
+		<tr>
+			<td>element selector</td>
+			<td>0001</td>
+		</tr>
+		<tr>
+			<td>class/attribute/pseudo-class selector</td>
+			<td>0010</td>
+		</tr>
+		<tr>
+			<td>id selector</td>
+			<td>0100</td>
+		</tr>
+		<tr>
+			<td>style attribute</td>
+			<td>1000</td>
+		</tr>
+	</table>
+	
+	<div id="outer" class="container">
+		<div id="inner" class="container">
+			<ul>
+				<li class="nav"><a href="#">One</a></li>
+				<li class="nav"><a href="#">Two</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+
+</body>
+</html>

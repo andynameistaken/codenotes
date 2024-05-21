@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pseudo classes & pseudo-elements</title>
+
+        <style>
+            /*article div:first-letter {*/
+            /*    font-size: 300%;*/
+            /*}*/
+            label {
+                display: block;
+                margin: 1px;
+                padding: 1px;
+            }
+            .field {
+                margin: 10px;
+                padding: 10px;
+            }
+            form:invalid {
+                border: 5px solid #ffdddd;
+            }
+            form:valid {
+                border: 5px solid #ddffdd;
+            }
+
+            input:required {
+                border-color: #800000;
+            }
+            input:valid {
+                background-color: #ddffdd;
+            }
+            input:invalid {
+                border: 5px solid #ffdddd;
+            }
+
+            input:required:invalid {
+                border-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+<!--        <article>-->
+<!--            <div>-->
+<!--                Hello-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                world-->
+<!--            </div>-->
+<!--        </article>-->
+
+        <form>
+            <div class="field">
+                <label for="url_input"> Enter a URL</label>
+                <input type="url" id="url_input">
+            </div>
+
+            <div class="field">
+                <label for="email_input"> Enter an e-mail address:</label>
+                <input type="email" id="email_input" required>
+            </div>
+        </form>
+
+    </body>
+</html>

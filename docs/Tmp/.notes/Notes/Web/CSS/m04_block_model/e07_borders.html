@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            p.dotted {
+                border: dotted;
+            }
+            p.dashed {
+                border: dashed;
+            }
+            
+            p.solid {
+                border: solid;
+            }
+            p.double {
+                border: double;
+            }
+            
+            /* Adds a bevel based on the color value in a way that makes the element appear pressed into the document.*/
+            p.groove {
+                border: groove 5px orange;
+            }
+            /*ridge: Similar to groove, but reverses the color values in a way that makes the element appear raised.*/
+            p.ridge {
+                border: ridge 5px red;
+            }
+            
+            /*inset: Adds a split tone to the line that makes the element appear slightly depressed.*/
+            p.inset {
+                border: inset 5px green;
+            }
+            
+            /*outset: Similar to inset, but reverses the colors in a way that makes the element appear slightly raised.*/
+            p.outset {
+                border: outset 5px orange;
+            }
+            
+            p.hidden {
+                border: hidden 5px blue;
+            }
+            
+            p.mixed {
+                border-style: dashed dotted solid double;
+                border-bottom-color: #719ECE;
+                border-top-color: #ff80ff;
+                border-right-color: green;
+                border-left-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="dotted">
+            Dotted
+        </p>
+        
+        <p class="dashed"> Dashed</p>
+        <p class="solid"> Solid</p>
+        <p class="double"> Double</p>
+        <p class="groove">Groove</p>
+        <p class="ridge"> Ridge</p>
+        <p class="inset">Inset</p>
+        <p class="outset"> Outset</p>
+        <p class="hidden"> Hidden</p>
+        <p class="mixed"> Mixed </p>
+    </body>
+</html>

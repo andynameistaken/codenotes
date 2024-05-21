@@ -1,0 +1,14 @@
+/*Applying the unset value to the all property will reset all the inherited
+properties to inherit and all of the non-inherited properties to initial.*/
+
+div {
+    font-size: 5rem;
+    border: 20px solid black;
+    color: palevioletred;
+}
+
+/*instead of setting all to initial
+*/
+div {
+    all: unset;
+}

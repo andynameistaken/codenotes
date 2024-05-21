@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Selector Lists</title>
+        
+        <style>
+            /*
+            Selector list
+            
+            If you have more than one thing which uses
+            the same CSS then the individual selectors can be combined
+            into a selector list so that the rule is applied to all of
+            the individual selector.
+            If there is mistake in selector the entire rule is deemed invalid.
+            
+            
+            Example:
+            */
+            h1,
+            .special {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Header 1</h1>
+        
+        <div class="special">
+            div with special class
+        </div>
+    </body>
+</html>

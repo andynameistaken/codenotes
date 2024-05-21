@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            /*combines two selectors such */
+            /*that elements matched by the second selector */
+            /*are selected if they have an ancestor*/
+            li {
+                list-style-type: disc;
+            }
+            li li {
+                list-style: upper-roman;
+            }
+            li li li {
+                list-style: square;
+            }
+            /*ONLY first line of p in box class*/
+            .box p:first-line {
+                font-size: 200%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                1st item 1st list
+                <ul>
+                    <li>
+                        1 item 2 list
+                        <ul>
+                            <li>1 item 3 list</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="box">
+            <p>
+                fkdllkfdlkfgklgfklsfklfgdslkfgdsklgsflkfgsdkl
+                fkdllkfdlkfgklgfklsfklfgdslkfgdsklgsflkfgsdkl
+                fkdllkfdlkfgklgfklsfklfgdslkfgdsklgsflkfgsdkl
+                fkdllkfdlkfgklgfklsfklfgdslkfgdsklgsflkfgsdkl
+            </p>
+        </div>
+    </body>
+</html>

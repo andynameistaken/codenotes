@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            /*article h2 {*/
+            /*    color: red;*/
+            /*}*/
+            article ul[class="super"]{
+                color: red;
+            }
+            article ul[class] {
+                color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Header 1</h1>
+        <article>
+            <h2>Header 2</h2>
+            <p>Paragraph inside article</p>
+            <ul class="super">
+                <li>List item 1</li>
+                <li>List item 2</li>
+            </ul>
+            
+            <ul>
+                <li> Item 2</li>
+            </ul>
+        </article>
+        <h2>Header 3</h2>
+        <p>Paragraph outside article</p>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Design</title>
+</head>
+<body>
+	
+	<h1>Responsive Images</h1>
+	<h2>Simple responsive image</h2>
+	<img srcset="elva-fairy-480w.jpg 480w,
+             elva-fairy-800w.jpg 800w"
+	     sizes="(max-width: 600px) 480px,
+            800px"
+	     src="elva-fairy-original.jpg"
+	     alt="Elva dressed as a fairy">
+	<h3>How it works:</h3>
+	<pre>
+		1. Getting information about device width
+		2. Checking out <strong>sizes</strong> element for first true.
+			<code>()</code> means <strong>if</strong> device.width <= 600px <strong>then</strong> choose 480px image
+	</pre>
+
+</body>
+</html>

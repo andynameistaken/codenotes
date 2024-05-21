@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            div {
+                display: inline;
+                margin: 10px;
+                /*An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".*/
+                outline: 1px solid;
+            }
+            div:only-child {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>I am an only child.</div>
+        </div>
+    
+        <div>
+            <div>I am the 1st sibling.</div>
+            <div>I am the 2nd sibling.</div>
+            <div>I am the 3rd sibling, <div>but this is an only child.</div></div>
+        </div>
+    </body>
+</html>

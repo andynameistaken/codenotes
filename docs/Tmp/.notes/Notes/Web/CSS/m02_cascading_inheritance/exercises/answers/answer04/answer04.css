@@ -1,0 +1,16 @@
+.main-list {
+    padding: 2rem;
+    border: solid #000;
+    color: red;
+    font-family: Verdana, monospace;
+}
+
+.sub-list {
+    padding: inherit;
+    border: inherit;
+}
+
+.sub-sub-list {
+    border: inherit;
+    color: initial;
+}

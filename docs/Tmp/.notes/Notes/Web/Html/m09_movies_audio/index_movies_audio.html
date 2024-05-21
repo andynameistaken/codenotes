@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movies and Audio</title>
+</head>
+<body>
+	<h1>Movies and Audio</h1>
+	<h2>Example video with multiple sources</h2>
+	<video controls>
+		<source src="video/small.webm" type="video/webm">
+		<source src="video/small.mp4" type="video/mp4">
+		<p>Your vrowser doesn't support wathching this video Here is a <a href="video/small.mp4">link to the video</a> instead</p>
+	</video>
+	
+	<h2>Example video with added features</h2>
+	<video controls muted loop  poster="pictures/small.jpg" preload="metadata">
+		<source src="video/small.mp4" type="video/mp4">
+		<source src="video/small.webm" type="video/webm">
+		<p>Your browser doesn't support wathching this video Here is a <a href="video/small.mp4">link to the video</a> instead</p>
+	</video>
+	
+	<h2>Audio</h2>
+	<audio controls >
+		<source src="audio/sample.mp3" type="audio/mp3">
+		<p>Your browser doesn't support HTML5 audio. Here is a <a href="audio/sample.mp3">link to the audio</a> instead.</p>
+		const mediaElem = document.getElementById("my-media-element");
+		mediaElem.load();
+	</audio>
+	<br>
+</body>
+</html>

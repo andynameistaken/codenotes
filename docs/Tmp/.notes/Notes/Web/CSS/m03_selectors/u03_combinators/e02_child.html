@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            /*The following example selects all <p> */
+            /*elements that are children of a <div> element:*/
+            div > p {
+                color: red;
+            }
+            
+            /*if we remove ">" it will color every li in ul
+               but for now only li of ul are colored
+            */
+            ul > li {
+                border-top: 5px solid red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>
+                First paragraph
+            </p>
+            
+            <p>Second paragraph</p>
+            <div>
+                <p> Paragraph inside 2 divs</p>
+            </div>
+        </div>
+        
+        <ul>
+            <li>Unordered item</li>
+            <li>Unordered item
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ol>
+            </li>
+        </ul>
+
+    </body>
+</html>

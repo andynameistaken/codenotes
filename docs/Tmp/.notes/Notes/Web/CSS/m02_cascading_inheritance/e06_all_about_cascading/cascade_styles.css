@@ -1,0 +1,24 @@
+/*
+    * Source order:
+         If you have more than one rule, which has exactly the same weight,
+          then the one that comes last in the CSS will win.
+    * Specificity:
+        more specific item is being chosen by the browser as the one that should style the element.
+         Only the properties which are the same are overwritten.
+*/
+
+/*Specificity example:*/
+
+h2 {
+    font-size: 2em;
+    color: black;
+    font-family: monospace;
+}
+
+.small {
+    font-size: 1em;
+}
+
+.bright {
+    color: rebeccapurple;
+}

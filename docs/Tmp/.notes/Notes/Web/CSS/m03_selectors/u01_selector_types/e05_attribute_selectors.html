@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Attribute Selectors</title>
+        <style>
+            /*Matches elements with an  attribute
+            (whose name is the value in square brackets).*/
+            li[class] {
+                color: red;
+            }
+            /*Matches elements with an  attribute whose value is exactly value — the string inside the quotes.*/
+            li[class="x"] {
+                background-color: blue;
+            }
+
+            
+            /*Matches elements with an attr attribute whose value is exactly value, or contains
+            value in its (space separated) list of values.*/
+            li[class ~= "x"] {
+                font-size: 200%;
+            }
+            /*Matches elements with an attr attribute whose value
+            is exactly value or begins with value immediately followed by a hyphen.*/
+            li[class |="x"] {
+                font-family: "Comic Sans MS";
+            }
+            
+            
+            /*Matches elements with an  attribute (whose name is the value in square brackets),
+            whose value begins with value.*/
+
+            h2[class^="external"] { color: red; }
+            
+            /*Matches elements with an attr attribute whose value ends with value.*/
+            h2[class$="external"] { border: black solid; }
+            
+            /*Matches elements with an attr attribute whose value
+            contains value anywhere within the string.*/
+            h2[class *= "external"] {
+                background-color: aquamarine;
+            }
+            
+            /*Case insensitivity*/
+            article ul li[class^="a"] {
+                background-color: yellow;
+            }
+
+           article ul li[class^="a" i] {
+                color: magenta;
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="a"> First </li>
+            <li class="x"> Second </li>
+            <li class="x y z"> Third </li>
+            <li class="x-y-z"> Fourth</li>
+        </ul>
+        
+        <h2 class="external-xd someclass"> Header 1</h2>
+        <h2 class="external-external">Header 2</h2>
+        <h2 class="abcd sdexternal efg">Header 3</h2>
+    
+        <h1>Case-insensitivity</h1>
+        <article>
+            <ul>
+                <li class="a">Item 1</li>
+                <li class="A">Item 2</li>
+                <li class="Ab">Item 3</li>
+            </ul>
+        </article>
+      
+    </body>
+</html>

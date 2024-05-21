@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Universal Selector</title>
+        
+        <style>
+            /* It will color whole document*/
+            * {
+                background-color: bisque;
+            }
+
+            article *:first-child {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+            <p>
+                First pargaph of an article
+            </p>
+            <p>
+                Second paragraph of an article
+            </p>
+            
+            <ul>
+                <li> List item</li>
+            </ul>
+        </article>
+    </body>
+</html>

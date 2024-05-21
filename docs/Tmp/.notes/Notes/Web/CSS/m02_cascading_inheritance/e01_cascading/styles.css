@@ -1,0 +1,10 @@
+h1 {
+    color: red;
+}
+h1 {
+    color: blue;
+}
+/*Cascading
+these rules have an identical selector
+and therefore carry the same specificity, so the last one in the source order wins.
+*/

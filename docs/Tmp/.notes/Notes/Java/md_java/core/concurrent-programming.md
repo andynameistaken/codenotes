@@ -1,3 +1,0 @@
-# Concurrent Programming
-
-## Race Condition
